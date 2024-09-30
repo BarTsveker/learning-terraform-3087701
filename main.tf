@@ -1,7 +1,3 @@
-# Configure the AWS provider
-provider "aws" {
-  region = "eu-west-1"
-}
 
 # Create a Security Group for an EC2 instance
 resource "aws_security_group" "instance" {
