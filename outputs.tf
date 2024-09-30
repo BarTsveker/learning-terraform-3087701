@@ -1,7 +1,8 @@
-output "instance_ami" {
-  value = aws_instance.web.ami
+# outputs.tf
+
+output "load_balancer_dns" {
+  value = aws_lb.web_server_lb.dns_name
+  description = "DNS name of the load balancer"
 }
 
-output "instance_arn" {
-  value = aws_instance.web.arn
-}
+# ... (Other outputs you might need)
