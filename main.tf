@@ -21,10 +21,8 @@ resource "aws_instance" "example" {
 	      echo "Hello, World" > index.html
 	      nohup busybox httpd -f -p 8080 &
 	      EOF
-			  
-  tags {
-    Name = "terraform-example"
-  }
+        
+            		
 }
 
 # Output variable: Public IP address
